@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Bar</title>
+    <style>
+        .item-H{grid-area:header;
+                height: 350px;}
+        .item-L{grid-area: lside;
+                height: 500px;}
+        .item-M{grid-area: main;
+                height: 500px;}
+        .item-F{grid-area: footer;
+                height: 100px;}
+        .gridcontainer{
+            display: grid;
+            grid-template-areas:
+            'header header header header header'
+            'lside main main main main'
+            'footer footer footer footer footer';
+            background-color: bisque;
+            grid-gap:5px;
+            padding:10px;}
+        .item{
+              background-color: gold;
+              border:2px solid red; 
+              padding:30px; 
+              font-size: 20px;
+              text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="item-H">
+            <img src="image/Header.png" alt="Header" style="height: 350px; align-items: center;" >
+        </div>
+        <div class="item-L item margin-bottom">
+            <p style="font-family: 'Times New Roman', Times, serif; font-size: 30px; color: #fe0a0a;"><b>เมนู</b></p>
+            <a href="register.html">
+                <button style="margin: auto;">
+                    <span style="font-family: 'Times New Roman', Times, serif;">สมัครสมาชิก</span>
+                </button>
+            </a>
+        </div>
+        <div class="item-M item-SPink">
+            <p style="font-family: 'Times New Roman', Times, serif; font-size: 30px; color: #ff0000; text-align: center;"><b>รายการสินค้า</b></p>
+            <form action="https://httpbin.org/post" method="post">
+                <table style="display: flex; align-items: center; justify-content: center;">
+                    <tr style="color: #764b36; font-family: 'Times New Roman', Times, serif; font-size: 25px;">
+                        <th>
+                            Bar <br>
+                            walkonthefire
+                        </th>
+                        <th>
+                            Bar <br>
+                            onthebeat
+                        </th>
+                        <th>
+                            Bar <br>
+                            onthebed
+                        </th>
+                        <th>
+                            Bar<br>
+                            slowdown
+                        </th>
+                        <th>
+                            Bar <br>
+                            wine
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="height: 250px;"><img src="image/walkonthefire.jpg" style="height: 190px;"></th>
+                        <th style="height: 250px;"><img src="image/onthebeat.jpg" style="height: 190px;"></th>
+                        <th style="height: 250px;"><img src="image/onthebed.jpg" style="height: 190px;"></th>
+                        <th style="height: 250px;"><img src="image/slowdown.jpg" style="height: 190px;"></th>
+                        <th style="height: 250px;"><img src="image/barwine.jpg" style="height: 190px;"></th>
+                    </tr>
+                    <tr style="color: #764b36;">
+                        <th>
+                            <label for="quanpencilid" style="font-family: 'THSarabun'; font-size: 25px;">จำนวนเพลง:</label>
+                            <select id="quanpencilid" name="quan" required style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">
+                                <option value="5 songs">5 เพลง</option>
+                                <option value="10 songs pencil">10 เพลง</option>
+                                <option value="20 songs pencils">20 เพลง</option>
+                                <option value="30 songs pencils">30 เพลง</option>
+                                <option value="40 songss">40 เพลง</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="quanpencilid" style="font-family: 'THSarabun'; font-size: 25px;">จำนวนเพลง:</label>
+                            <select id="quanpencilid" name="quan" required style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">
+                                <option value="5 songs">5 เพลง</option>
+                                <option value="10 songs pencil">10 เพลง</option>
+                                <option value="20 songs pencils">20 เพลง</option>
+                                <option value="30 songs pencils">30 เพลง</option>
+                                <option value="40 songss">40 เพลง</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="quanpencilid" style="font-family: 'THSarabun'; font-size: 25px;">จำนวนเพลง:</label>
+                            <select id="quanpencilid" name="quan" required style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">
+                                <option value="5 songs">5 เพลง</option>
+                                <option value="10 songs pencil">10 เพลง</option>
+                                <option value="20 songs pencils">20 เพลง</option>
+                                <option value="30 songs pencils">30 เพลง</option>
+                                <option value="40 songss">40 เพลง</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="quanpencilid" style="font-family: 'THSarabun'; font-size: 25px;">จำนวนเพลง:</label>
+                            <select id="quanpencilid" name="quan" required style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">
+                                <option value="5 songs">5 เพลง</option>
+                                <option value="10 songs pencil">10 เพลง</option>
+                                <option value="20 songs pencils">20 เพลง</option>
+                                <option value="30 songs pencils">30 เพลง</option>
+                                <option value="40 songss">40 เพลง</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="quanpencilid" style="font-family: 'THSarabun'; font-size: 25px;">จำนวนเพลง:</label>
+                            <select id="quanpencilid" name="quan" required style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">
+                                <option value="5 songs">5 เพลง</option>
+                                <option value="10 songs pencil">10 เพลง</option>
+                                <option value="20 songs pencils">20 เพลง</option>
+                                <option value="30 songs pencils">30 เพลง</option>
+                                <option value="40 songss">40 เพลง</option>
+                            </select>
+                        </th>
+                    </tr>
+                </table>
+                <br>
+                <input type="submit" value="ยืนยันคำสั่งซื้อ" style="font-family: 'Times New Roman', Times, serif; font-size: 20px; color: #080503; text-align: ;">
+            </form>
+        </div>
+        <div class="item-F item">
+            <address style="font-family: Times; color: #060302; font-size: 25px;">
+                <b style="text-align: center;"> มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต99 หมู่ที่ 18 ถ. พหลโยธิน ตำบล คลองหนึ่ง อำเภอคลองหลวง ปทุมธานี 12120 </b><br>
+                <b>ช่องทางการติดต่อ apple music: cattyonthebeat instagram : praevagurl
+                    Tel : 0614760613</b>
+            </address>
+        </div>
+    </div>
+    
+</body>
+</html>

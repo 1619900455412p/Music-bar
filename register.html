@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+         .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 0.5px solid rgb(0, 0, 0);
+            width: 40%;
+            padding: auto;
+            margin: auto;
+            height: auto;
+            background-color: rgb(234, 240, 243);
+        }
+
+        input[type="text"]:hover {
+            border: 1px solid lightblue;
+            outline: none;
+        }
+          .item-H {
+            grid-area: header;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item-L {
+            grid-area: lside;
+            height: 1000px;
+            align-items: center;
+            justify-content: center;
+        }
+        .item-M {
+            grid-area: main;
+            height: 1000px;
+        }
+        .item-F {
+            grid-area: footer;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gridcontainer {
+            display: grid;
+            grid-template-areas:
+            'header header header header header'
+            'lside main main main main'
+            'footer footer footer footer footer';
+            grid-gap: 5px;
+            padding: 10px;
+        }
+        .gridcontainer{
+            display: grid;
+            grid-template-areas:
+            'header header header header header'
+            'lside main main main main'
+            'footer footer footer footer footer';
+            background-color: rgb(249, 7, 7);
+            grid-gap:5px;
+            padding:20px;}
+        .item{
+              background-color: gold;
+              border:2px solid red; 
+              padding: 30px; 
+              font-size: 20px;
+              text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="item-H">
+            <img src="image/Header.png" alt="Header" style="height: 350px; align-items: center;" >
+        </div>
+        <div class="item-L item">
+            <p style="font-family: 'Times New Roman', Times, serif; font-size: 30px; color: #fe0a0a;"><b>เมนู</b></p>
+            <a href="index.html">
+                <button style="margin: auto;">
+                    <span style="font-family: 'Times New Roman', Times, serif;">Music Bar</span>
+                </button>
+            </a>
+        </div>
+        <div class="item-M item"> 
+            <h1 style="text-align: center;font-size: 30px;font-family:'Times New Roman', Times, serif; color: #fe0a0a;"><i>สมัครสมาชิก</i></h1>
+            <div class="container">
+                <form action="https://httpbin.org/post"method="post">
+                    <fieldset>
+                        <legend>Personai Information</legend>
+                    <label for="firstname" style="padding: 5px;
+                    margin: 5px 23px 5px 5px;">Name</label>
+                    <input type="text" id="firstname" name="user_name" style="margin: 15px 5px 5px 11px; padding: 5px;"><br>
+        
+                    <label for="lastname" style="padding: 5px;
+                    margin: 5px;">Lastname</label>
+                    <input type="text" id="lastname" name="sur_name" style="margin: 5px; padding: 5px;"><br>
+
+                <label for="male" style="font-family: 'THSarabun'; font-size: 22.5px; color: #13100f;">male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female" style="font-family: 'THSarabun'; font-size: 22.5px; color: #0a0908;">female</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="other" style="font-family: 'THSarabun'; font-size: 22.5px; color: #030202;">others</label>
+                <input type="radio" id="other" name="gender" value="other"><br>
+        
+                    <label for="pwd" style="padding: 5px;
+                    margin: 5px;">Password</label>
+                    <input type="password" id="pwd" name="password" style="margin: 5px; padding: 5px;"><br>
+
+                    <label for="pwd" style="padding: 5px;
+                    margin: 5px;">Your Tel!</label>
+                    <input type="password" id="pwd" name="password" style="margin: 5px; padding: 5px;"><br>
+                    
+                    <h3><i>Your Email!</i></h3>
+                    <label for="email">Email address</label><br><br>
+                    <input type="email" id="email" name="email_address"><br><br>
+        
+                    <h3><i>Born Date & Time!</i></h3>
+                    <label for="checkin">Date</label><br><br>
+                    <input type="date" id="checkin" name="checkin_date"><br><br>
+        
+                    <h3><i>Choose Vaccine!</i></h3>
+                    <label for="vname">Vaccine List</label><br>
+                    <select id="vname" name="vaccine_name">
+                        <option value="Covid19">Covid19</option>
+                        <option value="Flu">Flu</option>
+                        <option value="HBV">HBV</option>
+                        <option value="Rota">Rota</option>
+                    </select>
+                    <br>
+                    <hr>
+                    <label for="Comments">Comments:</label>
+                    <textarea id="Comments" name="Comments" rows="4" cols="50">
+
+                    </textarea>
+                    <br>
+                    
+                    <button>
+                        <span><input type="submit" value="ยืนยันการสมัคร" style="font-family: 'Times New Roman', Times, serif; font-size: 20px; color: #000000;"></span>
+                    </button>
+                </form>
+             </div>
+            <div class="item-F item">
+                <address style="font-family: 'Times New Roman', Times, serif; color: #060302; font-size: 25px;">
+                    <b style="text-align: center;"> มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต99 หมู่ที่ 18 ถ. พหลโยธิน ตำบล คลองหนึ่ง อำเภอคลองหลวง ปทุมธานี 12120 </b><br>
+                    <b>ช่องทางการติดต่อ apple music: cattyonthebeat instagram : praevagurl
+                        Tel : 0614760613</b>
+                </address>
+            </div>
+    </div>
+    
+</body>
+</html>
